@@ -4,5 +4,8 @@ def registar_cliente(nome):
     clientes.append(nome)
 
 def listar_clientes():
-    for cliente in clientes:
-        print(cliente)
+    if not clientes:
+        print("Nenhum cliente registado.")
+    else:
+        for cliente in clientes:
+            print(cliente)
